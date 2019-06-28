@@ -1,0 +1,161 @@
+/**
+ * This file contains overrides to Bootstrap variables.
+ *
+ * It also imports Bootstrap's variables, functions, and mixins.
+ * It does NOT import any of bootstrap's styles, so it can be
+ * imported in any file without affecting the bundle size.
+ */
+
+// Colors
+$blue: #0071bc !default;
+$blue-darker: #205493 !default;
+$blue-darkest: #112e51 !default;
+$blue-light: #a7cbdb !default;
+$blue-lightest: #e1f3f8 !default;
+$blue-alt: #02bfe7 !default;
+$blue-alt-dark: #00a6d2 !default;
+$blue-alt-light: #60b5ce !default;
+$green: #2e8540 !default;
+$green-light: #4aa564 !default;
+$green-lightest: #e7f4e4 !default;
+$yellow: #fdb81e !default;
+$yellow-light: #fad980 !default;
+$yellow-lightest: #fff1d2 !default;
+$red: #e31c3d !default;
+$red-dark: #cd2026 !default;
+$red-light: #e59393 !default;
+$red-lightest: #f9dede !default;
+
+$orange: #f89000 !default;
+$orange-light: #ffca95 !default;
+$purple: #7053aa !default;
+$purple-light: #b7a9d5 !default;
+$red-cog: #ad441d !default;
+$mint: #7ae8a6 !default;
+$teal: #18a39e !default;
+
+// Bootstrap Color Overrides
+
+$white: #fff !default;
+$gray-100: #f1f1f1 !default;
+$gray-300: #d6d7d9 !default;
+$gray-500: #aeb0b5 !default;
+$gray-600: #5b616b !default;
+$gray-800: #323a45 !default;
+$gray-900: #212121 !default;
+$black: #000 !default;
+
+$info: $blue !default;
+
+// Add colors to the default theme
+
+$theme-colors: (
+  'white': $white,
+  'gray-lighter': $gray-300,
+  'gray-light': $gray-500,
+  'gray': $gray-600,
+  'gray-dark': $gray-800,
+  'gray-darkest': $gray-900,
+  'blue': $blue,
+  'blue-darker': $blue-darker,
+  'blue-darkest': $blue-darkest,
+  'red': $red,
+  'orange': $orange,
+  'red-dark': $red-dark
+);
+
+// Body
+
+$body-bg: $gray-100 !default;
+$body-color: $gray-900 !default;
+
+// Fonts
+
+$font-family-serif: 'Merriweather', 'Georgia', 'Cambria', 'Times New Roman',
+  'Times', serif !default;
+$font-family-sans-serif: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica',
+  'Roboto', 'Arial', sans-serif !default;
+$h1-font-size: (30rem / 16) !default;
+$h2-font-size: (26rem / 16) !default;
+$h3-font-size: (22rem / 16) !default;
+$h4-font-size: (18rem / 16) !default;
+$h5-font-size: 1rem;
+$h6-font-size: (12rem / 16) !default;
+$headings-font-family: $font-family-serif !default;
+
+// Components
+
+$border-radius: (5rem / 16) !default;
+$border-radius-lg: (5rem / 16) !default;
+$border-radius-sm: (3rem / 16) !default;
+
+$box-shadow-sm: 0 0.25rem 0.375rem rgba($black, 0.075) !default;
+$box-shadow: 0 (6rem / 16) (12rem / 16) rgba($black, 0.175) !default;
+
+// Buttons
+
+$btn-font-weight: 500 !default;
+$btn-box-shadow: 1px 1px 5px rgba($black, 0.23) !default;
+
+// Dropdowns
+
+$dropdown-padding-y: 0 !default;
+$dropdown-border-width: 0 !default;
+$dropdown-border-radius: 0 !default;
+$dropdown-link-color: $gray-900 !default;
+$dropdown-link-hover-color: $gray-900 !default;
+$dropdown-link-hover-bg: $blue-lightest !default;
+$dropdown-link-active-color: $gray-900 !default;
+$dropdown-link-active-bg: $blue-lightest !default;
+$dropdown-link-disabled-color: $gray-500 !default;
+$dropdown-item-padding-y: (9rem / 16) !default;
+$dropdown-item-padding-x: 1rem !default;
+
+// Navbar
+
+$navbar-dark-color: $white !default;
+$navbar-dark-hover-color: $white !default;
+$navbar-dark-toggler-border-color: $white !default;
+$navbar-toggler-border-radius: 0 !default;
+
+// Cards
+
+$card-spacer-y: 0.5rem !default;
+$card-spacer-x: 1rem !default;
+$card-border-width: 0 !default;
+$card-border-radius: 0 !default;
+
+// Tooltips
+
+$tooltip-border-radius: 0 !default;
+
+// Popovers
+
+$popover-bg: $gray-900 !default;
+$popover-max-width: 300px !default;
+$popover-border-color: transparent !default;
+$popover-header-bg: $gray-900 !default;
+
+// Badges
+
+$badge-font-size: 1rem !default;
+$badge-font-weight: 400 !default;
+
+// Modals
+
+$modal-content-border-color: $gray-600 !default;
+$modal-content-border-radius: 0 !default;
+$modal-backdrop-opacity: 0.6 !default;
+
+// Alerts
+$alert-border-radius: 0 !default;
+$alert-border-width: 0 !default;
+
+// Breadcrumbs
+$breadcrumb-padding-y: 0.25rem;
+$breadcrumb-bg: transparent;
+$breadcrumb-divider: '›';
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';

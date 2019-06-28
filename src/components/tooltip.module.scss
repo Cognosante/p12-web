@@ -1,0 +1,5 @@
+.tooltip {
+  &:global(.bs-tooltip-top) {
+    top: -3px !important; // Need to override inline styles
+  }
+}

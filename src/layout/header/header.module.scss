@@ -1,0 +1,135 @@
+@import '../../variables.scss';
+
+$nav-bg-highlight: #1a467b;
+
+.header {
+  position: relative;
+  border-bottom: (6rem / 16) solid $orange;
+  background-image: linear-gradient(
+    to right,
+    $blue-darkest,
+    rgba($blue-darkest, 0)
+  );
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background: $blue-darkest url('./images/bg-connected-dots.png') no-repeat
+      right top;
+    background-size: auto 100px;
+
+    @include media-breakpoint-down(md) {
+      background: $blue-darkest;
+    }
+  }
+
+  :global(.container) {
+    @include media-breakpoint-down(sm) {
+      max-width: none;
+    }
+  }
+}
+
+.logo {
+  height: (40rem / 16);
+
+  @include media-breakpoint-up(sm) {
+    height: (45rem / 16);
+  }
+}
+
+.collapsible {
+  @include media-breakpoint-down(sm) {
+    background-color: $gray-900;
+  }
+}
+
+.navItem {
+  @include media-breakpoint-down(sm) {
+    border-bottom: 1px solid $gray-800;
+  }
+
+  @include media-breakpoint-up(md) {
+    &:global(.active) {
+      :global(.nav-link) {
+        background-color: $nav-bg-highlight;
+      }
+    }
+  }
+}
+
+:global(.navbar-dark .navbar-nav) {
+  :local(.navItem) {
+    @include media-breakpoint-down(sm) {
+      &:global(:hover),
+      &:global(.active) {
+        > :global(.nav-link) {
+          color: $blue-alt-dark;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+.navLink {
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    background-color: $nav-bg-highlight;
+  }
+}
+
+.userIcon {
+  top: -2px;
+}
+
+.toggle {
+  color: $white;
+
+  &:hover {
+    color: $gray-300;
+
+    @include media-breakpoint-down(sm) {
+      color: $blue-alt-dark;
+    }
+  }
+}
+
+.dropdown {
+  @include media-breakpoint-up(sm) {
+    :global(.dropdown-menu) {
+      box-shadow: $box-shadow;
+    }
+
+    :global(.dropdown-item) {
+      &:not(:last-child) {
+        border-bottom: 1px solid $gray-200;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    flex: 1;
+
+    :global(.dropdown-menu) {
+      float: none;
+      position: static;
+      background-color: transparent;
+    }
+
+    :global(.dropdown-item) {
+      width: 100%;
+      color: $white;
+
+      &:hover {
+        background-color: transparent;
+        color: $blue-alt-dark;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.popover {
+  @include transition(margin-top 0.2s ease-in-out);
+
+  &:global(.popover-content) {
+    &:global(li) {
+      margin-bottom: (5rem / 16);
+    }
+
+    &:global(a),
+    &:global(a:hover),
+    &:global(a:focus) {
+      color: lighten($brand-primary, 8%);
+    }
+  }
+}

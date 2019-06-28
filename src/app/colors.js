@@ -1,0 +1,34 @@
+// This is based on the colors in custom.scss
+// It should be kept in sync, preferably automatically.
+export const blue = '#0071bc';
+export const blueDarker = '#205493';
+export const blueDarkest = '#112e51';
+export const blueLight = '#6699cc';
+export const blueLightest = '#e1f3f8';
+export const blueAlt = '#02bfe7';
+export const blueAltDark = '#00a6d2';
+export const blueAltLight = '#60b5ce';
+export const green = '#2e8540';
+export const greenLight = '#4aa564';
+export const greenLightest = '#e7f4e4';
+export const yellow = '#fdb81e';
+export const yellowLight = '#fad980';
+export const yellowLightest = '#fff1d2';
+export const red = '#e31c3d';
+export const redDark = '#cd2026';
+export const redLight = '#e59393';
+export const redLightest = '#f9dede';
+export const orange = '#f89000';
+export const orangeLight = '#ffca95';
+export const purple = '#b01476';
+export const redCog = '#ad441d';
+export const mint = '#7ae8a6';
+export const teal = '#18a39e';
+export const white = '#fff';
+export const gray100 = '#f1f1f1';
+export const gray300 = '#d6d7d9';
+export const gray500 = '#aeb0b5';
+export const gray600 = '#5b616b';
+export const gray800 = '#323a45';
+export const gray900 = '#212121';
+export const black = '#000';

@@ -1,0 +1,9 @@
+.item {
+  font-size: 0.875rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item:global(.active) a {
+  color: var(--gray);
+}
